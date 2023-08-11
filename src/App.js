@@ -19,7 +19,9 @@ function App() {
 
     function success(result) {
       scanner.clear();
-      setScanResult(result);
+      // setScanResult(result);
+      let house = result.split(" ");
+      setScanResult(house[1]);
     }
 
     function error(err) {
